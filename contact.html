@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="경신이에게 방명록 메시지 남기기">
+  <title>연락하기 | 경신의 홈페이지</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">경신<span>.</span></a>
+      <button class="nav-toggle" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html"   class="nav-link">홈</a></li>
+        <li><a href="growth.html"  class="nav-link">성장일기</a></li>
+        <li><a href="hobby.html"   class="nav-link">취미</a></li>
+        <li><a href="youtube.html" class="nav-link">경신TV</a></li>
+        <li><a href="contact.html" class="nav-link">연락</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── CONTENT ── -->
+  <main class="page-content">
+    <div class="section">
+
+      <div class="section-header fade-in">
+        <span class="section-tag">Guestbook</span>
+        <h2 class="section-title">방명록</h2>
+        <p class="section-desc">
+          내 홈페이지를 방문해줘서 고마워!<br>
+          이름이랑 메시지를 남겨줘.
+        </p>
+      </div>
+
+      <div class="contact-wrapper fade-in">
+
+        <div class="contact-intro">
+          <p>
+            여기까지 와줬구나! 방명록에 한 줄이라도 남겨주면 경신이가 정말 기뻐할 거야.
+            드럼, 게임, 유튜브 뭐든지 얘기해도 돼. 😊
+          </p>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">이름</label>
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              placeholder="너의 이름을 알려줘!"
+              required
+              autocomplete="off"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="message">메시지</label>
+            <textarea
+              id="message"
+              class="form-control"
+              rows="5"
+              placeholder="경신이에게 하고 싶은 말을 적어줘!"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">메시지 보내기 ✈️</button>
+        </form>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 경신. All rights reserved. &nbsp;<span class="neon">♥</span></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
